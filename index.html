@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lightbox Test</title>
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="styleMain.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jquery.insetBorderEffect.js"></script>
+</head>
+<body>
+   
+    <div class = "wrapper">
+        <div class = "images">
+            <a href="images/hmm.jpg" data-lightbox="hmm"><img src="images/hmm.jpg" alt=""></a>
+            <a href="images/hmm2.jpg" data-lightbox="hmm"><img src="images/hmm2.jpg" alt=""></a>
+            <a href="images/hmm3.jpg" data-lightbox="hmm"><img src="images/hmm3.jpg" alt=""></a>
+            <a href="images/hmmCat.png" data-lightbox="hmm"><img src="images/hmmCat.png" alt=""></a>
+            <a href="images/hmmDog.jpg" data-lightbox="hmm"><img src="images/hmmDog.jpg" alt=""></a>
+        </div>
+    </div>
+       <script src="dist/js/lightbox.js"></script>
+        <script> 
+        $('img').height('100px;').width('100px')
+        $('#lightboxOverlay').hover(function(){
+            alert('test')
+        })
+    </script>
+</body>
+</html>
